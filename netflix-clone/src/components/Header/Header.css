@@ -1,5 +1,5 @@
 .header_outer_container {
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: center;
@@ -10,8 +10,8 @@
     color: white;
     transition: all 0.5s;
     transition-timing-function: ease-in;
-    z-index: 100;
-    /* background-color: red; */
+    z-index: 1;
+    width: 100%;
 }
 
 .header_container {
@@ -70,9 +70,8 @@
   color: #b3b3b3;
 }
 
-@media (max-width: 768px) {
-  .header_left ul li:not(:first-child),
-  .header_right ul li {
+@media (max-width: 855px) {
+  .header_left ul li:not(:first-child){
     display: none;
   }
   .header_left ul li:first-child {
